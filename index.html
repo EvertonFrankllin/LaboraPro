@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Mão de Obra</title>
+
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <header>
+
+    </header>
+
+<Section class="container">
+    <h1>Calculadora de Mão de Obra</h1>
+    <label for="parede">Área da Parede (m²):</label>
+    <input type="number" id="parede" placeholder="Ex: 44.4">
+    
+    <label for="teto">Área do Teto (m²):</label>
+    <input type="number" id="teto" placeholder="Ex: 19.25">
+    
+    <label for="precoM2">Preço da Mão de Obra por m² (R$):</label>
+    <input type="number" id="precoM2" value="20" step="0.1">
+    
+    <button onclick="adicionarArea()">Adicionar Área</button>
+    <button onclick="calcularMaoDeObra()">Calcular Mão de Obra</button>
+    <button class="print-button" onclick="imprimirResultado()">Imprimir</button>
+    
+    <div class="areas" id="areas"></div>
+    <div class="result" id="resultado"></div>
+</Section>
+<!-- LaboraPro é um aplicativo inovador e versátil projetado para ajudar profissionais e clientes a calcular de forma precisa os custos de mão de obra para uma variedade de serviços. Originalmente concebido para calcular o valor da mão de obra para pintura, LaboraPro expandiu sua funcionalidade para incluir outros serviços como limpeza, serviços elétricos e muitos outros. -->
+</body>
+</html>
