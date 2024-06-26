@@ -42,7 +42,7 @@ function calcularMaoDeObra() {
     `;
 }
 
-function imprimirResultado() {
+function impressResultado() {
     const conteudo = document.querySelector('.container').innerHTML;
     const janelaImpressao = window.open('', '', 'height=700,width=700');
     janelaImpressao.document.write('<html><head><title>Imprimir Resultado</title>');
